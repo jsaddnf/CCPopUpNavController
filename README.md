@@ -7,10 +7,10 @@
 
 
 ## Description
-*CCPopUpNavController* is a pop-up view, the type is a NavigationController,through a new controller as the CCPopUpNavController's rootviewcontroller can be easily placed in which you want the view or control, easier to achieve the desired effect 
+*CCPopUpNavController* is a pop-up view, the type is a NavigationController,through create a new controller as the CCPopUpNavController's rootviewcontroller can be easily placed in which you want the view or control, easier to achieve the desired effect 
 
 
-## screenshot
+## ScreenShot
 
 <img src="demo.gif" alt="img" width="300px">
 
@@ -20,12 +20,9 @@ Copy the source code in you project
 
 You can copy the `CCPopUpNavController` folder and its source file `CCPopUpTransition.swift`,`CCPopUpNavController.swift` in your project.
 
+## Useage
 
-
-##Usage
-
-
-###You must set the CCPopUpNavController.view.frame. the height is the pop view's visible height
+### You must set the CCPopUpNavController.view.frame. the height is the pop view's visible height
 
 ```swift
 
@@ -55,5 +52,7 @@ or
 ```
 
 
-###License
+
+### License
+
 CCPopUpNavController is available under the MIT license. See the LICENSE file for more info.
