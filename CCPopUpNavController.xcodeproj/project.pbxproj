@@ -14,6 +14,9 @@
 		2CB49F851F0B5F4A0029E15A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB49F831F0B5F4A0029E15A /* LaunchScreen.storyboard */; };
 		2CB49F901F0B5F4A0029E15A /* CCPopUpNavControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB49F8F1F0B5F4A0029E15A /* CCPopUpNavControllerTests.swift */; };
 		2CB49F9B1F0B5F4A0029E15A /* CCPopUpNavControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB49F9A1F0B5F4A0029E15A /* CCPopUpNavControllerUITests.swift */; };
+		2CB49FAA1F0B61A20029E15A /* CCPopUpNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB49FA91F0B61A20029E15A /* CCPopUpNavController.swift */; };
+		2CB49FAC1F0B66C50029E15A /* ShowUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB49FAB1F0B66C50029E15A /* ShowUpViewController.swift */; };
+		2CB49FAE1F0B6EAE0029E15A /* CCPopUpTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB49FAD1F0B6EAE0029E15A /* CCPopUpTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2CB49F961F0B5F4A0029E15A /* CCPopUpNavControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCPopUpNavControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB49F9A1F0B5F4A0029E15A /* CCPopUpNavControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCPopUpNavControllerUITests.swift; sourceTree = "<group>"; };
 		2CB49F9C1F0B5F4A0029E15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB49FA91F0B61A20029E15A /* CCPopUpNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPopUpNavController.swift; sourceTree = "<group>"; };
+		2CB49FAB1F0B66C50029E15A /* ShowUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUpViewController.swift; sourceTree = "<group>"; };
+		2CB49FAD1F0B6EAE0029E15A /* CCPopUpTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPopUpTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		2CB49F791F0B5F4A0029E15A /* CCPopUpNavController */ = {
 			isa = PBXGroup;
 			children = (
+				2CB49FA81F0B61920029E15A /* Source */,
 				2CB49F7A1F0B5F4A0029E15A /* AppDelegate.swift */,
 				2CB49F7C1F0B5F4A0029E15A /* ViewController.swift */,
+				2CB49FAB1F0B66C50029E15A /* ShowUpViewController.swift */,
 				2CB49F7E1F0B5F4A0029E15A /* Main.storyboard */,
 				2CB49F811F0B5F4A0029E15A /* Assets.xcassets */,
 				2CB49F831F0B5F4A0029E15A /* LaunchScreen.storyboard */,
@@ -123,6 +131,15 @@
 				2CB49F9C1F0B5F4A0029E15A /* Info.plist */,
 			);
 			path = CCPopUpNavControllerUITests;
+			sourceTree = "<group>";
+		};
+		2CB49FA81F0B61920029E15A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2CB49FA91F0B61A20029E15A /* CCPopUpNavController.swift */,
+				2CB49FAD1F0B6EAE0029E15A /* CCPopUpTransition.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB49FAA1F0B61A20029E15A /* CCPopUpNavController.swift in Sources */,
+				2CB49FAE1F0B6EAE0029E15A /* CCPopUpTransition.swift in Sources */,
 				2CB49F7D1F0B5F4A0029E15A /* ViewController.swift in Sources */,
+				2CB49FAC1F0B66C50029E15A /* ShowUpViewController.swift in Sources */,
 				2CB49F7B1F0B5F4A0029E15A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +527,7 @@
 				2CB49FA11F0B5F4A0029E15A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CB49FA21F0B5F4A0029E15A /* Build configuration list for PBXNativeTarget "CCPopUpNavControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +536,7 @@
 				2CB49FA41F0B5F4A0029E15A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CB49FA51F0B5F4A0029E15A /* Build configuration list for PBXNativeTarget "CCPopUpNavControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +545,7 @@
 				2CB49FA71F0B5F4A0029E15A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
