@@ -16,29 +16,16 @@ class ViewController: UIViewController {
         btn.layer.cornerRadius = 2
         btn.layer.borderWidth = 1
         btn.layer.borderColor = UIColor.orange.cgColor
-        btn .setTitle("go", for: .normal)
+        btn .setTitle("Go", for: .normal)
         return btn
     }()
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//        button.frame = CGRectMake((self.view.frame.size.width-280)/2, (self.view.frame.size.height-40)/2, 280, 40);
-//        button.clipsToBounds = YES;
-//        button.layer.cornerRadius = 2;
-//        button.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
-//        button.layer.borderWidth = 1;
-//        button.layer.borderColor = [UIColor colorWithRed:17/255. green:159/255. blue:194/255. alpha:1.0].CGColor;
-//        [button setTitleColor:[UIColor colorWithRed:17/255. green:159/255. blue:194/255. alpha:1.0] forState:UIControlStateNormal];
-        
+
         view.addSubview(actionBtn)
         actionBtn .addTarget(self, action:#selector(actionBtnAction), for: .touchUpInside)
-        
-        
     }
     @objc fileprivate func actionBtnAction(){
         let vc = ShowUpViewController()
